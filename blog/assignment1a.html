@@ -2,33 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Assignment 1a – Web Design Review</title>
+  <title>Assignment 1a – Web Design Review (Airbnb)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --bg:#0b0b0b; --card:#ffffff; --ink:#111; --muted:#666; --accent:#1e90ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:linear-gradient(180deg,#f6f9ff, #eef4ff);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink);
+    }
+    .wrap{max-width:860px; margin:40px auto; padding:0 20px}
+    header{margin-bottom:16px}
+    .badge{display:inline-block; font-size:.8rem; color:#fff; background:var(--accent); padding:4px 10px; border-radius:999px}
+    h1{margin:.4rem 0 0}
+    .card{
+      background:var(--card); border:1px solid #e8eefc; border-radius:18px; padding:24px;
+      box-shadow:0 10px 30px rgba(30,144,255,.08);
+    }
+    h2{margin:1.25rem 0 .5rem}
+    p{margin:.4rem 0 1rem}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    footer{margin:24px 0 40px; color:var(--muted)}
+  </style>
 </head>
 <body>
-  <h1>Focus on Web Design #1 (Assignment 1a)</h1>
+  <div class="wrap">
+    <header>
+      <span class="badge">Assignment 1a</span>
+      <h1>Focus on Web Design #1 — Site Review</h1>
+      <p class="muted">Hands-On Exercise #2 blog post</p>
+    </header>
 
-  <h2>Website Chosen</h2>
-  <p><strong>a) URL:</strong> <a href="[TYPE WEBSITE URL HERE]" target="_blank">[TYPE WEBSITE URL HERE]</a></p>
+    <section class="card">
+      <h2>Website Chosen</h2>
+      <p><strong>a) URL:</strong> <a href="https://www.airbnb.com" target="_blank" rel="noopener">https://www.airbnb.com</a></p>
 
-  <h2>Purpose & Audience</h2>
-  <p><strong>b) Purpose:</strong> [TYPE HERE]</p>
-  <p><strong>c) Intended audience:</strong> [TYPE HERE]</p>
+      <h2>Purpose & Audience</h2>
+      <p><strong>b) Purpose:</strong> Help people find and book short-term stays and experiences, and let hosts list properties.</p>
+      <p><strong>c) Intended audience:</strong> Travelers looking for places to stay, and potential hosts/property owners.</p>
 
-  <h2>Effectiveness</h2>
-  <p><strong>d) Does it reach its audience? Why/why not:</strong> [TYPE HERE]</p>
+      <h2>Effectiveness</h2>
+      <p><strong>d) Does it reach its audience?</strong> Yes. The homepage centers a simple search (location/dates/guests), uses strong imagery, clear categories, and keeps “Become a host” visible—meeting both traveler and host needs.</p>
 
-  <h2>Usefulness to Me</h2>
-  <p><strong>e)</strong> [TYPE HERE]</p>
+      <h2>Usefulness to Me</h2>
+      <p><strong>e)</strong> Useful for comparing options quickly with filters (price, beds, amenities) and a live map that updates as you move it.</p>
 
-  <h2>Appeal (Design & UX)</h2>
-  <p><strong>f) Colors, images, media, organization, navigation:</strong> [TYPE HERE]</p>
+      <h2>Appeal (Design & UX)</h2>
+      <p><strong>f)</strong> Clean layout, generous white space, consistent iconography, accessible color contrast, and predictable navigation. Some pop-up modals feel busy on smaller screens, but overall it’s polished.</p>
 
-  <h2>Recommendation</h2>
-  <p><strong>g) Would you encourage others to visit? Why/why not:</strong> [TYPE HERE]</p>
+      <h2>Recommend?</h2>
+      <p><strong>g)</strong> Yes—inventory is broad and the interface is easy to learn. It’s also good for inspiration even if I book elsewhere.</p>
 
-  <h2>Improvements</h2>
-  <p><strong>h) How to improve:</strong> [TYPE HERE]</p>
+      <h2>Improvements</h2>
+      <p><strong>h)</strong> Show total price (with fees/taxes) earlier in results, simplify a few mobile filters, and surface host verification/safety indicators more clearly.</p>
+    </section>
 
-  <p><a href="../index.html">← Back to Home</a></p>
+    <footer>
+      <p><a href="../index.html">← Back to Home</a></p>
+    </footer>
+  </div>
 </body>
 </html>
