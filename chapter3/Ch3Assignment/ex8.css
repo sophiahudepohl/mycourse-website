@@ -1,0 +1,34 @@
+/* ex8.css (final, after the change) */
+
+/* Document defaults */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #000000;      /* black background */
+  color: #ffffff;           /* white text */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  padding: 1rem;            /* just to keep text off the edges */
+}
+
+/* Links */
+a {
+  background-color: #CCCCCC;  /* gray background for links */
+  text-decoration: none;
+  padding: 0.1rem 0.25rem;    /* so the gray is visible */
+}
+
+/* Headings */
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: #CCCCCC;             /* gray h1 as required */
+  margin-top: 0;
+}
+
+/* The .news class */
+.news {
+  color: red;
+  font-style: italic;
+}
