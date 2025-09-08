@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hands-On 3.4–3.6 – Selectors</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; line-height:1.6; }
+    header, footer { background:#0b4f6c; color:#fff; padding:1rem; }
+    nav { background:#e5e7eb; padding:.5rem 1rem; }
+    nav a { color:#0a66c2; text-decoration:none; margin-right:1rem; }
+    nav a:hover { text-decoration:underline; }
+
+    /* element selector */
+    h2 { border-left: 6px solid #ffb703; padding-left:.5rem; }
+
+    /* class selector */
+    .callout { background:#f1f5f9; border:1px solid #e2e8f0; padding:1rem; border-radius:12px; }
+    .muted { color:#6b7280; }
+
+    /* ID selector */
+    #services { background:#fafafa; border:1px solid #eee; padding:1rem; border-radius:12px; }
+
+    /* descendant selector */
+    #services ul li { margin:.25rem 0; }
+
+    /* grouped selectors */
+    h3, h4 { color:#0b4f6c; }
+
+    /* link pseudo-classes */
+    a:link { color:#0a66c2; }
+    a:visited { color:#6d28d9; }
+    a:hover { text-decoration:underline; }
+    a:active { color:#dc2626; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trillium Media Design</h1>
+    <p class="muted">Selectors practice</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>This page demonstrates <span class="muted">element</span>, <span class="muted">class</span>, and <span class="muted">id</span> selectors.</p>
+      <p class="callout">Tip: Use <code>div</code> for blocks and <code>span</code> for inline content.</p>
+    </section>
+
+    <section id="services">
+      <h3>Services</h3>
+      <ul>
+        <li>Web design</li>
+        <li>Front-end development</li>
+        <li>Accessibility reviews</li>
+      </ul>
+    </section>
+
+    <section>
+      <h4>Links Demo</h4>
+      <p>Visit a <a href="https://www.w3.org/">new site</a> and see how link colors change.</p>
+    </section>
+  </main>
+
+  <footer>&copy; 2025 Trillium Media Design</footer>
+</body>
+</html>
