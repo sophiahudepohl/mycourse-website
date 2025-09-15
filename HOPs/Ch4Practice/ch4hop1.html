@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KayakDoorCounty.net</title>
+  <link rel="icon" href="images/favicon.ico">
+  <style>
+    /* Simple, assignment-friendly styles just to place the images */
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#0e201c; color:#eaf1ed; }
+    header { padding: 12px 16px; background:#0e201c; }
+    nav { display:flex; gap:12px; background:#0e201c; padding:8px 16px; }
+    nav a img { display:block; }
+    .hero {
+      /* use the wide faded image as a “background” banner */
+      background: url("images/heroback.jpg") no-repeat center/cover;
+      min-height: 220px;
+      display:flex; align-items:center;
+    }
+    .hero-inner { padding: 24px 16px; }
+    main { padding: 16px; max-width: 980px; margin: 0 auto; background:#0e201c; }
+    figure { margin: 0; }
+    figcaption { font-size: .9rem; color:#cfe5da; margin-top:6px; }
+    footer { padding: 16px; text-align:center; color:#cfe5da; }
+  </style>
+</head>
+<body>
+
+  <!-- Logo/title image (HOP 4.3: inserting an image with alt text) -->
+  <header>
+    <img src="images/kayakdc.gif" alt="KayakDoorCounty.net logo">
+  </header>
+
+  <!-- Image-based navigation (HOP 4.4: image links) -->
+  <nav aria-label="primary">
+    <a href="#"><img src="images/home.gif" alt="Home"></a>
+    <a href="#"><img src="images/reservations.gif" alt="Reservations"></a>
+    <a href="#"><img src="images/contact.gif" alt="Contact"></a>
+    <a href="#"><img src="images/tours.gif" alt="Tours"></a>
+  </nav>
+
+  <!-- “Background” hero banner using a wide image + a foreground photo with alt -->
+  <div class="hero">
+    <div class="hero-inner">
+      <figure>
+        <img src="images/hero.jpg" alt="Kayaker paddling on a calm lake with trees in the background">
+        <figcaption>Explore Door County by kayak—guided tours daily.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <main>
+    <h1>Welcome to KayakDoorCounty.net</h1>
+    <p>
+      Experience the shoreline, caves, and wildlife from the water. Our guided tours are beginner-friendly and include
+      all equipment. Use the navigation images above to check availability or contact us.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 KayakDoorCounty.net
+  </footer>
+</body>
+</html>
