@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trillium Media Design</title>
+  <link rel="icon" href="images/favicon.ico">
+  <style>
+    /* Page background uses a light repeating texture (HOP 4.7) */
+    body {
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #eaf4d0 url("images/trilliumbg.gif") repeat;
+      color:#233418;
+    }
+
+    /* Banner (HOP 4.7): a banner image across the top */
+    header {
+      background:#cfe3a8;
+    }
+    .banner {
+      display:block;
+      width:100%;
+      height:auto;
+    }
+
+    /* Small logo image near heading (HOP 4.8: additional inline images) */
+    .brand {
+      display:flex; align-items:center; gap:10px;
+      padding: 12px 16px;
+      background:#cfe3a8;
+      border-bottom: 1px solid #9fb57d;
+    }
+    .brand img { width:26px; height:26px; }
+
+    /* Content */
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      background:#ffffff;
+      padding: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.06);
+    }
+
+    /* Figure with caption (HOP 4.9) */
+    figure { margin: 0; }
+    figcaption { color:#4a5e3a; font-size:.95rem; margin-top:6px; }
+
+    /* Footer with a decorative image strip (HOP 4.8) */
+    footer {
+      margin-top: 24px;
+      text-align:center;
+      color:#2e4220;
+      background: #cfe3a8;
+    }
+    .footer-strip {
+      display:block;
+      width:100%;
+      height:auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Banner image -->
+    <img class="banner" src="images/trilliumbanner.jpg" alt="Trillium Media Design banner">
+    <div class="brand">
+      <img src="images/trillium.gif" alt="Trillium blossom icon">
+      <h1 style="margin:0;">Trillium Media Design</h1>
+    </div>
+  </header>
+
+  <main>
+    <h2>Elegant, accessible web experiences</h2>
+    <p>
+      We design and build websites with clear structure, performance, and inclusive UX. Our work spans small business
+      sites, content hubs, and lightweight web apps.
+    </p>
+
+    <!-- HOP 4.9: use <figure> and <figcaption> with an illustrative image -->
+    <figure>
+      <img src="images/trilliumgradient.png" alt="Soft green gradient sample used in Trillium designs">
+      <figcaption>Figure 1. Accent gradient used in brand components and section dividers.</figcaption>
+    </figure>
+  </main>
+
+  <footer>
+    <img class="footer-strip" src="images/trilliumfoot.gif" alt="Decorative footer strip">
+    <p>&copy; 2025 Trillium Media Design</p>
+  </footer>
+
+</body>
+</html>
