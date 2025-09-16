@@ -1,1 +1,75 @@
+/* === Section A (#7): Practice with CSS === */
 
+/* 1) footer element selector */
+footer {
+  background-color: #e6f2ff;          /* light blue */
+  color: #0a2a66;                     /* dark blue text */
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  border: 1px dashed #0a2a66;         /* narrow, dashed, dark-blue */
+  text-align: center;
+}
+
+/* 2) id named notice: 80% width, centered */
+#notice {
+  width: 80%;
+  margin: 0 auto;                     /* centers block elements */
+}
+
+/* 3) class that produces a headline with dotted underline */
+.headline {
+  color: #0b6b5c;                      /* choose a color you like */
+  border-bottom: 3px dotted #0b6b5c;
+  padding-bottom: .25rem;
+  margin-bottom: .75rem;
+  font-weight: 700;
+}
+
+/* 4) h1 selector: drop-shadow text, 50% transparent background, sans-serif, 4em */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;  /* sans-serif */
+  font-size: 4em;
+  line-height: 1.05;
+  color: #111;
+  text-shadow: 2px 2px 6px rgba(0,0,0,.35);   /* drop shadow on text */
+  background-color: rgba(255, 215, 0, 0.5);   /* 50% transparent bg (gold tint) */
+  padding: .25em .3em;
+  display: inline-block;
+  border-radius: .15em;
+}
+
+/* 5) id named section: small, red, Arial font; white background; width 80%; drop shadow */
+#section {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;                    /* “small” text */
+  color: #cc0000;                      /* red */
+  background: #ffffff;                 /* white background */
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);  /* drop shadow */
+  border-radius: 8px;
+}
+
+/* Optional base styles for the page */
+:root { --ink:#1f2937; --paper:#f9fafb; --link:#0a66c2; }
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; }
+body { font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; }
+main { width: min(960px, 92%); margin: 1.25rem auto; }
+a { color: var(--link); text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+
+/* Figure + caption for the photo (HOP 4.5-style) */
+figure { margin: 0; }
+.figure-card {
+  width: 100%;
+  max-width: 460px;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,.06);
+}
+.figure-card img { display:block; width:100%; height:auto; }
+.figure-card figcaption { padding:.6rem .8rem; font-size:.9rem; color:#4b5563; }
