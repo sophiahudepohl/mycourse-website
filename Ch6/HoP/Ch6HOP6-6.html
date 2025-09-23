@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOP 6.6 – Float Layout & Clear</title>
+<style>
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#ffffff;color:#111827}
+  header{background:#065f46;color:#fff;padding:16px}
+  main{max-width:1000px;margin:0 auto}
+
+  /* Float layout */
+  .wrap{overflow:auto; padding:16px} /* contains floated children */
+  nav{float:left; width:220px; background:#ecfdf5; border-right:1px solid #d1fae5; padding:16px; box-sizing:border-box}
+  .content{float:right; width:calc(100% - 220px); padding:16px; box-sizing:border-box}
+
+  nav ul{list-style:none; padding:0; margin:0}
+  nav li{margin:.5rem 0}
+  nav a{color:#065f46; text-decoration:none}
+  nav a:hover{text-decoration:underline}
+
+  .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin:0 0 16px 0}
+
+  /* Footer clears floats by being outside .wrap (and .wrap contains its floats with overflow:auto) */
+  footer{background:#111827;color:#fff;padding:16px;text-align:center;margin-top:16px}
+</style>
+</head>
+<body>
+  <header>
+    <h1>HOP 6.6 — Float Layout & Clear</h1>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <nav aria-label="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Setup</a></li>
+          <li><a href="#">Examples</a></li>
+          <li><a href="#">Docs</a></li>
+        </ul>
+      </nav>
+
+      <section class="content">
+        <article class="card">
+          <h2>Two-Column Layout</h2>
+          <p>The sidebar is floated left; the main content is floated right. The parent <code>.wrap</code> uses <code>overflow:auto;</code> to contain floats.</p>
+        </article>
+
+        <article class="card">
+          <h2>Clearing Strategy</h2>
+          <p>Because the parent contains its floats, the footer won’t overlap the columns. This is a classic clearfix approach covered in Chapter 6.</p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="y"></span> Chapter 6 HOP — Float & Clear Demo
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
