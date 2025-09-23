@@ -1,1 +1,25 @@
+/* === Ch6 HOP #9 external CSS === */
 
+/* Page base (set background + text via CSS from #7 idea) */
+:root { --paper:#f7fbff; --ink:#0f1a33; }
+html,body{margin:0;padding:0}
+body{background:var(--paper); color:var(--ink); font-family:Arial, Helvetica, sans-serif; line-height:1.6}
+
+/* Container */
+main{max-width:900px; margin:24px auto; padding:0 16px}
+
+/* Headline (reuse the idea from .headline in exercise7.css) */
+h1{font:700 2rem/1.1 Arial, Helvetica, sans-serif; margin:0 0 .75rem}
+h2{margin:1.25rem 0 .5rem}
+
+/* Unordered list of hobby links */
+ul.links{list-style:disc; padding-left:22px}
+
+/* LVHA – choose distinct colors */
+a:link    { color:#0ea5e9; text-decoration: underline; background: #e0f2fe; padding:2px 4px; border-radius:6px }
+a:visited { color:#7c3aed; text-decoration: underline; background: #ede9fe }
+a:hover   { color:#0a0a0a; text-decoration: none;     background: #bbf7d0 }   /* ← no underline on hover */
+a:active  { color:#dc2626; text-decoration: underline; background: #fee2e2 }
+
+/* Footer (light, small) */
+footer{margin-top:24px; padding:12px 0; font-size:.9rem; color:#475569}
