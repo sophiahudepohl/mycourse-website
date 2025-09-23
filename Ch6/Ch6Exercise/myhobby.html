@@ -1,1 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Volleyball — by Sophia Hudepohl</title>
 
+  <!-- Embedded CSS (required for #10) -->
+  <style>
+    :root { --paper:#fffdf8; --ink:#1f2937; --accent:#0ea5e9 }
+    html,body{margin:0;padding:0}
+    body{background:var(--paper); color:var(--ink); font-family:Arial, Helvetica, sans-serif; line-height:1.65}
+    main{max-width:900px; margin:24px auto; padding:0 16px}
+    h1{font:700 2.2rem/1.1 Arial, Helvetica, sans-serif; margin:.5rem 0 1rem}
+    .lede{font-size:1.05rem; color:#374151}
+    .figure-card{max-width:640px; background:#fff; border:1px solid #e5e7eb; border-radius:12px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,.06); margin:1rem 0}
+    .figure-card img{display:block; width:100%; height:auto}
+    .figure-card figcaption{padding:.6rem .8rem; font-size:.9rem; color:#4b5563}
+    a{color:var(--accent)}
+    a:hover{text-decoration:underline}
+    footer{margin:24px 0 16px; padding-top:12px; border-top:1px solid #e5e7eb; font-size:.95rem; color:#475569}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Why I Love Volleyball</h1>
+    <p class="lede">Volleyball keeps me active, focused, and surrounded by great teammates. I play weekly and try to improve a little each time.</p>
+
+    <!-- Hobby photo (place file at Ch6/Ch6Exercise/images/hobby.jpg) -->
+    <figure class="figure-card">
+      <img src="images/hobby.jpg" alt="Volleyball—player serving on an indoor court">
+      <figcaption>Figure 1. Pre-game serve during a weekend match.</figcaption>
+    </figure>
+
+    <p>
+      I enjoy the strategy and communication that volleyball requires. Whether I’m practicing serves or working on defensive positioning,
+      there’s always something to refine. The energy of a close match is the best motivation to keep training.
+    </p>
+    <p>
+      If you want to learn more about the sport, the resources at
+      <a href="https://www.usavolleyball.org/" target="_blank" rel="noopener">USA Volleyball</a>
+      are a great starting point for players and fans.
+    </p>
+
+    <footer>
+      Questions or comments?
+      <a href="mailto:sophiahudepohl@example.com">sophiahudepohl@example.com</a> &middot;
+      &copy; <span id="y"></span> Sophia Hudepohl
+    </footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
