@@ -1,1 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOP 7.7 – CSS Sprite Navigation</title>
+<style>
+  :root { --ink:#0f172a; --paper:#ffffff }
+  html,body{margin:0;padding:0}
+  body{font-family:Arial,Helvetica,sans-serif; background:var(--paper); color:var(--ink)}
+  header{background:#111827;color:#fff;padding:16px}
+  header h1{margin:0;font-size:1.6rem}
+  main{max-width:1000px;margin:20px auto;padding:0 16px}
+  nav ul{list-style:none; padding:0; margin:0; display:flex; gap:16px; flex-wrap:wrap}
+  nav li{margin:0}
+  /* sprite button */
+  .icon{
+    display:inline-block; width:48px; height:48px;
+    background-image:url('images/sprite.png'); /* place at Ch7/HoP/images/sprite.png */
+    background-repeat:no-repeat; text-indent:-9999px; overflow:hidden;
+    border-radius:10px; border:1px solid #e5e7eb
+  }
+  /* adjust positions to your actual sprite grid */
+  .home   { background-position:   0   0; }
+  .about  { background-position: -48px 0; }
+  .links  { background-position: -96px 0; }
+  .email  { background-position:-144px 0; }
+  .card{background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px; margin-top:16px}
+  .fallback a{ color:#2563eb; text-decoration:none }
+  .fallback a:hover{ text-decoration:underline }
+</style>
+</head>
+<body>
+  <header><h1>HOP 7.7 — Sprite Navigation</h1></header>
+  <main>
+    <nav aria-label="sprite navigation">
+      <ul>
+        <li><a class="icon home"  href="#">Home</a></li>
+        <li><a class="icon about" href="#">About</a></li>
+        <li><a class="icon links" href="#">Links</a></li>
+        <li><a class="icon email" href="mailto:sophiahudepohl@example.com">Email</a></li>
+      </ul>
+    </nav>
 
+    <section class="card fallback">
+      <h2>How it works</h2>
+      <p>Each button shows a different part of a single image using <code>background-position</code>. If the sprite is missing, use these text links:</p>
+      <p>
+        <a href="#">Home</a> ·
+        <a href="#">About</a> ·
+        <a href="#">Links</a> ·
+        <a href="mailto:sophiahudepohl@example.com">Email</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
