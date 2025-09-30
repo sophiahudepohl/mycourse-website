@@ -1,41 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HOP 7.4 – Responsive Basics</title>
-<style>
-  :root { --ink:#0f172a; --paper:#f8fafc; --accent:#2563eb }
-  html,body{margin:0;padding:0}
-  body{font-family:Arial,Helvetica,sans-serif; background:var(--paper); color:var(--ink); line-height:1.6}
-  header{background:var(--accent); color:#fff; padding:16px}
-  header h1{margin:0; font-size:1.8rem}
-  main{max-width:1100px; margin:20px auto; padding:0 16px}
-  .hero{border-radius:12px; overflow:hidden; margin:0 0 16px}
-  .hero img{display:block; width:100%; height:auto} /* flexible image */
-  .row{display:grid; grid-template-columns:2fr 1fr; gap:16px}
-  .card{background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px}
-  @media (max-width: 768px){ .row{grid-template-columns:1fr} }
-</style>
+  <meta charset="UTF-8">
+  <title>Chapter 7 HOP 7-4</title>
 </head>
 <body>
-  <header><h1>HOP 7.4 — Responsive Basics</h1></header>
-  <main>
-    <figure class="hero">
-      <!-- Put image at Ch7/HoP/images/hero.jpg -->
-      <img src="images/hero.jpg" alt="Responsive banner">
-    </figure>
-    <section class="row">
-      <article class="card">
-        <h2>Fluid Layout</h2>
-        <p>Two columns collapse to one below 768px.</p>
-        <p>Banner scales with <code>width:100%</code> and <code>height:auto</code>.</p>
-      </article>
-      <aside class="card">
-        <h2>Viewport</h2>
-        <p>Meta viewport prevents desktop scaling on phones.</p>
-      </aside>
-    </section>
-  </main>
+  <h1>Hero Image Example</h1>
+  <img src="images/hero.jpg" alt="Hero Image">
 </body>
 </html>
