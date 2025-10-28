@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ch8 HOP 8-3</title>
+</head>
+<body>
+  <p>
+    <a href="Ch8HOP8-2.html">8-2</a> |
+    <a href="Ch8HOP8-3.html">8-3</a> |
+    <a href="Ch8HOP8-4.html">8-4</a>
+  </p>
+
+  <h1>HOP 8.3 — Colspan & Rowspan</h1>
+
+  <table border="1">
+    <caption>Workshop Schedule</caption>
+    <thead>
+      <tr>
+        <th scope="col" rowspan="2">Day</th>
+        <th scope="col" colspan="2">Morning</th>
+        <th scope="col" colspan="2">Afternoon</th>
+      </tr>
+      <tr>
+        <th scope="col">9–10</th>
+        <th scope="col">10–11</th>
+        <th scope="col">1–2</th>
+        <th scope="col">2–3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Mon</th>
+        <td>HTML</td>
+        <td>Tables</td>
+        <td rowspan="2">Accessibility</td>
+        <td>Forms</td>
+      </tr>
+      <tr>
+        <th scope="row">Tue</th>
+        <td colspan="2">Lab: Table Styling</td>
+        <td>Inputs</td>
+      </tr>
+      <tr>
+        <th scope="row">Wed</th>
+        <td>Flexbox</td>
+        <td>Media Queries</td>
+        <td>Sprites</td>
+        <td>Wrap-up</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5"><strong>Total Sessions:</strong> 12</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
