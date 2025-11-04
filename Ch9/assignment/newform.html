@@ -4,126 +4,127 @@
   <meta charset="UTF-8">
   <title>New Form</title>
   <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f9fc;
-    padding: 20px;
-  }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 20px;
+    }
 
-  h1 {
-    color: #1f4e79;
-  }
+    h1 {
+      text-align: center;
+    }
 
-  form {
-    background-color: #ffffff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    max-width: 600px;
-  }
+    form {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 500px;
+      margin: 0 auto;
+    }
 
-  fieldset {
-    border: 1px solid #7da0ca;
-    padding: 10px;
-    margin-bottom: 15px;
-  }
+    fieldset {
+      border: 1px solid #999;
+      margin-bottom: 15px;
+      padding: 10px;
+    }
 
-  legend {
-    font-weight: bold;
-    color: #1f4e79;
-  }
+    legend {
+      font-weight: bold;
+    }
 
-  label {
-    display: inline-block;
-    width: 150px;
-    margin-bottom: 8px;
-  }
+    label {
+      display: inline-block;
+      width: 140px;
+      margin-bottom: 8px;
+    }
 
-  input[type="text"],
-  input[type="password"],
-  select {
-    width: 60%;
-    padding: 4px;
-  }
+    input[type="text"],
+    input[type="password"],
+    select {
+      width: 60%;
+      padding: 4px;
+    }
 
-  input[type="image"] {
-    display: block;
-    margin-top: 15px;
-    max-width: 180px;
-  }
-</style>
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="image"] {
+      display: block;
+      margin: 10px auto;
+      max-width: 200px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      margin-right: 10px;
+      padding: 5px 10px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>New Account</h1>
+  <h1>New Form</h1>
 
   <form action="https://webdevbasics.net/scripts/demo.php" method="post">
-    <!-- a) username text box (max 30) -->
+
+    <!-- Username Textbox -->
     <p>
       <label for="username">Username:</label>
-      <input id="username" name="username" type="text" maxlength="30" required>
+      <input id="username" name="username" type="text" maxlength="30">
     </p>
 
-    <!-- g) password box pword -->
+    <!-- Password Box -->
     <p>
       <label for="pword">Password:</label>
-      <input id="pword" name="pword" type="password" required>
+      <input id="pword" name="pword" type="password">
     </p>
 
-    <!-- f) hidden userid -->
-    <input type="hidden" name="userid" value="">
-
-    <!-- b) radio buttons for favorite day -->
+    <!-- Radio Buttons -->
     <fieldset>
       <legend>Favorite Day of the Week</legend>
-      <p>
-        <label><input type="radio" name="favday" value="Mon" required> Monday</label>
-        <label><input type="radio" name="favday" value="Fri"> Friday</label>
-        <label><input type="radio" name="favday" value="Sat"> Saturday</label>
-        <label><input type="radio" name="favday" value="Sun"> Sunday</label>
-      </p>
+      <label><input type="radio" name="day" value="monday"> Monday</label><br>
+      <label><input type="radio" name="day" value="friday"> Friday</label><br>
+      <label><input type="radio" name="day" value="saturday"> Saturday</label><br>
+      <label><input type="radio" name="day" value="sunday"> Sunday</label>
     </fieldset>
 
-    <!-- c) select list for favorite social site -->
+    <!-- Select List -->
     <p>
       <label for="social">Favorite Social Network:</label>
       <select id="social" name="social">
         <option>Instagram</option>
-        <option>TikTok</option>
         <option>Facebook</option>
-        <option>X (Twitter)</option>
-        <option>YouTube</option>
+        <option>Snapchat</option>
+        <option>Twitter</option>
       </select>
     </p>
 
-    <!-- d) fieldset+legend Shipping Address -->
+    <!-- Shipping Address -->
     <fieldset>
       <legend>Shipping Address</legend>
-      <p>
-        <label for="addr1">Address Line 1:</label>
-        <input id="addr1" name="Addressline1" type="text">
-      </p>
-      <p>
-        <label for="addr2">Address Line 2:</label>
-        <input id="addr2" name="Addressline2" type="text">
-      </p>
-      <p>
-        <label for="city">City:</label>
-        <input id="city" name="City" type="text">
-      </p>
-      <p>
-        <label for="state">State:</label>
-        <input id="state" name="State" type="text">
-      </p>
-      <p>
-        <label for="zip">Zip:</label>
-        <input id="zip" name="Zip" type="text">
-      </p>
+      <p><label for="address1">Address Line 1:</label>
+      <input id="address1" name="address1" type="text"></p>
+
+      <p><label for="address2">Address Line 2:</label>
+      <input id="address2" name="address2" type="text"></p>
+
+      <p><label for="city">City:</label>
+      <input id="city" name="city" type="text"></p>
+
+      <p><label for="state">State:</label>
+      <input id="state" name="state" type="text"></p>
+
+      <p><label for="zip">Zip:</label>
+      <input id="zip" name="zip" type="text"></p>
     </fieldset>
 
-    <!-- e) image button (signup.gif) -->
-    <p>
-      <input type="image" src="images/signup.gif" alt="Sign Up">
-    </p>
+    <!-- Hidden Input -->
+    <input type="hidden" name="userid" value="12345">
+
+    <!-- Image Button -->
+    <input type="image" src="signup.gif" alt="Sign Up">
+
   </form>
 </body>
 </html>
