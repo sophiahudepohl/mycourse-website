@@ -2,76 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Music Survey</title>
+  <title>Music Survey Form</title>
   <style>
-    body { font-family: Arial, sans-serif; background:#f7f9fc; margin: 32px; }
-    form { max-width: 640px; background:#fff; padding:20px; border:1px solid #cfd8e3; border-radius:8px; }
-    fieldset { border:1px solid #98b4d4; padding:12px 16px; margin-bottom:16px; }
-    legend { font-weight:700; color:#1f4e79; }
-    label { display:inline-block; width:140px; vertical-align:top; }
-    input[type="text"], input[type="email"], select, textarea { width:60%; }
-    textarea { resize:vertical; }
-    .actions input { margin-right:8px; background:#1f4e79; color:#fff; border:0; padding:8px 14px; border-radius:4px; cursor:pointer; }
-    .actions input[type="reset"] { background:#6b7280; }
-    .footer { margin-top:16px; font-size:.9rem; color:#374151; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    fieldset {
+      border: 1px solid #999;
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: inline-block;
+      width: 140px;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 60%;
+      padding: 4px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      margin-right: 10px;
+      padding: 5px 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
   </style>
 </head>
+
 <body>
   <h1>Music Survey</h1>
 
-  <form action="https://webdevbasics.net/scripts/demo.php" method="post">
-    <p>
-      <label for="name">Name:</label>
-      <input id="name" name="name" type="text">
-    </p>
-
-    <p>
-      <label for="email">E-mail:</label>
-      <input id="email" name="email" type="email" placeholder="you@example.com">
-    </p>
-
+  <form>
     <fieldset>
-      <legend>Favorite Genre (choose one)</legend>
+      <legend>Listener Information</legend>
       <p>
-        <label><input type="radio" name="genre" value="Pop" required> Pop</label>
-        <label><input type="radio" name="genre" value="Country"> Country</label>
-        <label><input type="radio" name="genre" value="Hip-Hop"> Hip-Hop</label>
-        <label><input type="radio" name="genre" value="Rock"> Rock</label>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text">
+      </p>
+
+      <p>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email">
+      </p>
+
+      <p>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" cols="60" rows="3"></textarea>
       </p>
     </fieldset>
 
     <fieldset>
-      <legend>Where do you usually listen?</legend>
+      <legend>Music Preferences</legend>
+      <p>Favorite Type of Music:</p>
+      <label><input type="radio" name="genre" value="pop"> Pop</label><br>
+      <label><input type="radio" name="genre" value="rock"> Rock</label><br>
+      <label><input type="radio" name="genre" value="country"> Country</label><br>
+      <label><input type="radio" name="genre" value="rap"> Rap</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Listening Habits</legend>
       <p>
-        <label for="where" style="width:auto; margin-right:8px;">Select one:</label>
-        <!-- shows 3 items, has 4+ options -->
-        <select id="where" name="where" size="3">
-          <option>Car</option>
-          <option>Gym</option>
-          <option>Home</option>
-          <option>Walking</option>
-          <option>Work</option>
+        <label for="platform">Music Platform:</label>
+        <select id="platform" name="platform" size="3">
+          <option>Spotify</option>
+          <option>Apple Music</option>
+          <option>Pandora</option>
+          <option>YouTube Music</option>
         </select>
       </p>
+
+      <p>
+        <label for="date">Date Listened:</label>
+        <input id="date" name="date" type="date">
+      </p>
     </fieldset>
 
     <p>
-      <label for="date">Listening Date:</label>
-      <input id="date" name="date" type="date">
-    </p>
-
-    <p>
-      <label for="comments">Why you love it:</label>
-      <!-- 60 characters wide, 3 rows high -->
-      <textarea id="comments" name="comments" cols="60" rows="3" placeholder="Tell us about your music habits..."></textarea>
-    </p>
-
-    <p class="actions">
-      <input type="submit" value="Submit Survey">
+      <input type="submit" value="Submit">
       <input type="reset" value="Reset">
     </p>
   </form>
 
-  <p class="footer">© Sophia Hudepohl • sophia@example.com</p>
+  <footer>
+    <p>Created by: <strong>Sophia Hudepohl</strong></p>
+    <p>Email: <a href="mailto:sophiahudepohl@gmail.com">sophiahudepohl@gmail.com</a></p>
+  </footer>
 </body>
 </html>
