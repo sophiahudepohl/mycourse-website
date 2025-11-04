@@ -52,13 +52,19 @@
     input[type="image"] {
       display: block;
       margin: 10px auto;
-      max-width: 200px;
+      max-width: 150px;
     }
 
     input[type="submit"],
     input[type="reset"] {
       margin-right: 10px;
       padding: 5px 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -67,7 +73,6 @@
   <h1>New Form</h1>
 
   <form action="https://webdevbasics.net/scripts/demo.php" method="post">
-
     <!-- Username Textbox -->
     <p>
       <label for="username">Username:</label>
@@ -103,6 +108,7 @@
     <!-- Shipping Address -->
     <fieldset>
       <legend>Shipping Address</legend>
+
       <p><label for="address1">Address Line 1:</label>
       <input id="address1" name="address1" type="text"></p>
 
@@ -124,7 +130,11 @@
 
     <!-- Image Button -->
     <input type="image" src="signup.gif" alt="Sign Up">
-
   </form>
+
+  <footer>
+    <p>Created by: <strong>Sophia Hudepohl</strong></p>
+    <p>Email: <a href="mailto:sophiahudepohl@gmail.com">sophiahudepohl@gmail.com</a></p>
+  </footer>
 </body>
 </html>
