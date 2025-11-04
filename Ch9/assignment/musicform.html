@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Survey</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f7f9fc; margin: 32px; }
+    form { max-width: 640px; background:#fff; padding:20px; border:1px solid #cfd8e3; border-radius:8px; }
+    fieldset { border:1px solid #98b4d4; padding:12px 16px; margin-bottom:16px; }
+    legend { font-weight:700; color:#1f4e79; }
+    label { display:inline-block; width:140px; vertical-align:top; }
+    input[type="text"], input[type="email"], select, textarea { width:60%; }
+    textarea { resize:vertical; }
+    .actions input { margin-right:8px; background:#1f4e79; color:#fff; border:0; padding:8px 14px; border-radius:4px; cursor:pointer; }
+    .actions input[type="reset"] { background:#6b7280; }
+    .footer { margin-top:16px; font-size:.9rem; color:#374151; }
+  </style>
+</head>
+<body>
+  <h1>Music Survey</h1>
 
+  <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+    <p>
+      <label for="name">Name:</label>
+      <input id="name" name="name" type="text">
+    </p>
+
+    <p>
+      <label for="email">E-mail:</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com">
+    </p>
+
+    <fieldset>
+      <legend>Favorite Genre (choose one)</legend>
+      <p>
+        <label><input type="radio" name="genre" value="Pop" required> Pop</label>
+        <label><input type="radio" name="genre" value="Country"> Country</label>
+        <label><input type="radio" name="genre" value="Hip-Hop"> Hip-Hop</label>
+        <label><input type="radio" name="genre" value="Rock"> Rock</label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Where do you usually listen?</legend>
+      <p>
+        <label for="where" style="width:auto; margin-right:8px;">Select one:</label>
+        <!-- shows 3 items, has 4+ options -->
+        <select id="where" name="where" size="3">
+          <option>Car</option>
+          <option>Gym</option>
+          <option>Home</option>
+          <option>Walking</option>
+          <option>Work</option>
+        </select>
+      </p>
+    </fieldset>
+
+    <p>
+      <label for="date">Listening Date:</label>
+      <input id="date" name="date" type="date">
+    </p>
+
+    <p>
+      <label for="comments">Why you love it:</label>
+      <!-- 60 characters wide, 3 rows high -->
+      <textarea id="comments" name="comments" cols="60" rows="3" placeholder="Tell us about your music habits..."></textarea>
+    </p>
+
+    <p class="actions">
+      <input type="submit" value="Submit Survey">
+      <input type="reset" value="Reset">
+    </p>
+  </form>
+
+  <p class="footer">© Sophia Hudepohl • sophia@example.com</p>
+</body>
+</html>
