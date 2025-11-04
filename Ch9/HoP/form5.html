@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+</head>
+<body>
+  <h1>Feedback</h1>
+
+  <form>
+    <p>
+      <label for="topic">Topic:</label>
+      <select id="topic" name="topic">
+        <option value="general">General</option>
+        <option value="support">Support</option>
+        <option value="billing">Billing</option>
+      </select>
+    </p>
+
+    <p>Preferred Contact:</p>
+    <p>
+      <label><input type="radio" name="contact" value="email" checked> Email</label>
+      <label><input type="radio" name="contact" value="phone"> Phone</label>
+    </p>
+
+    <p>Subscribe to:</p>
+    <p>
+      <label><input type="checkbox" name="newsletter" value="yes"> Newsletter</label>
+      <label><input type="checkbox" name="tips" value="yes"> Tips</label>
+    </p>
+
+    <p>
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+    </p>
+
+    <p>
+      <input type="submit" value="Send">
+    </p>
+  </form>
+</body>
+</html>
