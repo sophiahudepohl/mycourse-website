@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Form</title>
+</head>
+<body>
+  <h1>New Account</h1>
 
+  <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+    <!-- a) username text box (max 30) -->
+    <p>
+      <label for="username">Username:</label>
+      <input id="username" name="username" type="text" maxlength="30" required>
+    </p>
+
+    <!-- g) password box pword -->
+    <p>
+      <label for="pword">Password:</label>
+      <input id="pword" name="pword" type="password" required>
+    </p>
+
+    <!-- f) hidden userid -->
+    <input type="hidden" name="userid" value="">
+
+    <!-- b) radio buttons for favorite day -->
+    <fieldset>
+      <legend>Favorite Day of the Week</legend>
+      <p>
+        <label><input type="radio" name="favday" value="Mon" required> Monday</label>
+        <label><input type="radio" name="favday" value="Fri"> Friday</label>
+        <label><input type="radio" name="favday" value="Sat"> Saturday</label>
+        <label><input type="radio" name="favday" value="Sun"> Sunday</label>
+      </p>
+    </fieldset>
+
+    <!-- c) select list for favorite social site -->
+    <p>
+      <label for="social">Favorite Social Network:</label>
+      <select id="social" name="social">
+        <option>Instagram</option>
+        <option>TikTok</option>
+        <option>Facebook</option>
+        <option>X (Twitter)</option>
+        <option>YouTube</option>
+      </select>
+    </p>
+
+    <!-- d) fieldset+legend Shipping Address -->
+    <fieldset>
+      <legend>Shipping Address</legend>
+      <p>
+        <label for="addr1">Address Line 1:</label>
+        <input id="addr1" name="Addressline1" type="text">
+      </p>
+      <p>
+        <label for="addr2">Address Line 2:</label>
+        <input id="addr2" name="Addressline2" type="text">
+      </p>
+      <p>
+        <label for="city">City:</label>
+        <input id="city" name="City" type="text">
+      </p>
+      <p>
+        <label for="state">State:</label>
+        <input id="state" name="State" type="text">
+      </p>
+      <p>
+        <label for="zip">Zip:</label>
+        <input id="zip" name="Zip" type="text">
+      </p>
+    </fieldset>
+
+    <!-- e) image button (signup.gif) -->
+    <p>
+      <input type="image" src="images/signup.gif" alt="Sign Up">
+    </p>
+  </form>
+</body>
+</html>
